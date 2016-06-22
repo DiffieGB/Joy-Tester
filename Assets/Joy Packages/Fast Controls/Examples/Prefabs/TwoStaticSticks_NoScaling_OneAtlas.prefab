@@ -1,0 +1,246 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: TwoStaticSticks_NoScaling_OneAtlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 0
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c926dd53258f14f83a1dfc9792978739, type: 1}
+  m_Name: 
+  atlasItems:
+  - name: thumbstick_background
+    textureOffset: {x: 0, y: 0}
+    textureTiling: {x: .88671875, y: .443359375}
+    assetPath: FastControls/Examples/Textures/Simple/VeryHighRes/thumbstick_background.png
+  - name: thumbstick_stick
+    textureOffset: {x: 0, y: .4453125}
+    textureTiling: {x: .34375, y: .171875}
+    assetPath: FastControls/Examples/Textures/Simple/VeryHighRes/thumbstick_stick.png
+  atlasPadding: 2
+  atlasTextureColorImportFormat: 0
+  atlasTexture: {fileID: 2800000, guid: e9d6b66b046a840f7b4a903288f90eb9, type: 1}
+  atlasTextureMaxWidth: 2048
+  editorCurrentSection: 1
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 069de520fe3974737ac3ab7f69109e89, type: 1}
+  m_Name: 
+  mThumbSticks:
+  - mName: LeftThumbStick
+    mOrigin: 0
+    mHorizontalMargin: 96
+    mVerticalMargin: 96
+    mExtendedHitAreaOnLeft: 0
+    mExtendedHitAreaOnRight: 0
+    mExtendedHitAreaOnTop: 0
+    mExtendedHitAreaOnBottom: 0
+    mBackgroundWidth: 456
+    mBackgroundHeight: 256
+    mBackgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    mHighlightTintBackground: 1
+    mBackgroundHighlightTint: {r: 1, g: 1, b: 1, a: 1}
+    mUserInteractionEnabled: 1
+    mRequireStickHit: 0
+    mShowBackgroundOnlyOnTouch: 0
+    mHidden: 0
+    mBackgroundAtlasSourceName: thumbstick_background
+    mHighlightBackgroundAtlasSourceName: 
+    mHideTransitionType: 1
+    mHideTransitionDuration: .330000013
+    mHitAreaHorizontalMargin: -1
+    mHitAreaVerticalMargin: -1
+    mHitAreaWidth: -1
+    mHitAreaHeight: -1
+    mThumbStickWidth: 184
+    mThumbStickTint: {r: 1, g: 1, b: 1, a: 1}
+    mUseCurve: 0
+    mCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    mMode: 0
+    mCenteringType: 2
+    mCenteringAnimationDuration: .25
+    mStickMaxDistance: 0
+    mStickMaxDistanceOffset: -9
+    mLimitStickDragDistance: 1
+    mThumbStickAtlasSourceName: thumbstick_stick
+    mHighlightThumbStickAtlasSourceName: 
+    mHighlightTintThumbStick: 1
+    mThumbstickHighlightTint: {r: .335820913, g: .972132444, b: 1, a: 1}
+    eventTargets: []
+  - mName: RightThumbStick
+    mOrigin: 1
+    mHorizontalMargin: 96
+    mVerticalMargin: 96
+    mExtendedHitAreaOnLeft: 0
+    mExtendedHitAreaOnRight: 0
+    mExtendedHitAreaOnTop: 0
+    mExtendedHitAreaOnBottom: 0
+    mBackgroundWidth: 456
+    mBackgroundHeight: 256
+    mBackgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    mHighlightTintBackground: 1
+    mBackgroundHighlightTint: {r: 1, g: 1, b: 1, a: 1}
+    mUserInteractionEnabled: 1
+    mRequireStickHit: 0
+    mShowBackgroundOnlyOnTouch: 0
+    mHidden: 0
+    mBackgroundAtlasSourceName: thumbstick_background
+    mHighlightBackgroundAtlasSourceName: 
+    mHideTransitionType: 1
+    mHideTransitionDuration: .330000013
+    mHitAreaHorizontalMargin: -1
+    mHitAreaVerticalMargin: -1
+    mHitAreaWidth: -1
+    mHitAreaHeight: -1
+    mThumbStickWidth: 184
+    mThumbStickTint: {r: 1, g: 1, b: 1, a: 1}
+    mUseCurve: 0
+    mCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    mMode: 0
+    mCenteringType: 2
+    mCenteringAnimationDuration: .25
+    mStickMaxDistance: 0
+    mStickMaxDistanceOffset: -9
+    mLimitStickDragDistance: 1
+    mThumbStickAtlasSourceName: thumbstick_stick
+    mHighlightThumbStickAtlasSourceName: 
+    mHighlightTintThumbStick: 1
+    mThumbstickHighlightTint: {r: 0, g: .972549021, b: 1, a: 1}
+    eventTargets: []
+  mButtons:
+  - mName: ButtonA
+    mOrigin: 1
+    mHorizontalMargin: 346
+    mVerticalMargin: 120
+    mExtendedHitAreaOnLeft: 80
+    mExtendedHitAreaOnRight: 22
+    mExtendedHitAreaOnTop: 22
+    mExtendedHitAreaOnBottom: 80
+    mBackgroundWidth: 184
+    mBackgroundHeight: 184
+    mBackgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    mHighlightTintBackground: 1
+    mBackgroundHighlightTint: {r: 0, g: .972549021, b: 1, a: 1}
+    mUserInteractionEnabled: 1
+    mRequireStickHit: 0
+    mShowBackgroundOnlyOnTouch: 0
+    mHidden: 1
+    mBackgroundAtlasSourceName: thumbstick_stick
+    mHighlightBackgroundAtlasSourceName: 
+    mHideTransitionType: 1
+    mHideTransitionDuration: .330000013
+    mIconAtlasSourceName: 
+    mHighlightIconAtlasSourceName: 
+    mIconWidth: 64
+    mIconTint: {r: 1, g: 1, b: 1, a: 1}
+    mIconHeight: 64
+    mIconOffsetX: 0
+    mIconOffsetY: 0
+    mHighlightTintIcon: 0
+    mIconHighlightTint: {r: 1, g: 1, b: 1, a: 1}
+    eventTargets: []
+  - mName: ButtonB
+    mOrigin: 1
+    mHorizontalMargin: 120
+    mVerticalMargin: 346
+    mExtendedHitAreaOnLeft: 22
+    mExtendedHitAreaOnRight: 80
+    mExtendedHitAreaOnTop: 80
+    mExtendedHitAreaOnBottom: 22
+    mBackgroundWidth: 184
+    mBackgroundHeight: 184
+    mBackgroundTint: {r: 1, g: 1, b: 1, a: 1}
+    mHighlightTintBackground: 1
+    mBackgroundHighlightTint: {r: 0, g: .972549021, b: 1, a: 1}
+    mUserInteractionEnabled: 1
+    mRequireStickHit: 0
+    mShowBackgroundOnlyOnTouch: 0
+    mHidden: 1
+    mBackgroundAtlasSourceName: thumbstick_stick
+    mHighlightBackgroundAtlasSourceName: 
+    mHideTransitionType: 1
+    mHideTransitionDuration: .330000013
+    mIconAtlasSourceName: 
+    mHighlightIconAtlasSourceName: 
+    mIconWidth: 64
+    mIconTint: {r: 1, g: 1, b: 1, a: 1}
+    mIconHeight: 64
+    mIconOffsetX: 0
+    mIconOffsetY: 0
+    mHighlightTintIcon: 0
+    mIconHighlightTint: {r: 1, g: 1, b: 1, a: 1}
+    eventTargets: []
+  mAtlasOptions: []
+  mAtlas: {fileID: 11400000}
+  mHidden: 0
+  mScalingType: 0
+  mAutomaticScalingDimension: 3
+  mAutomaticScalingBaseValue: 1536
+  mAutomaticScalingForcePixelPerfect: 0
+  mHideTransitionType: 1
+  mHideTransitionDuration: .5
+  mShader: {fileID: 4800000, guid: 1aecce325cd514caea2cbcff1e925235, type: 1}
+  mScale: 1
+  mUserInteractionEnabled: 1
+  mSuppressDebugMessages: 0
+  mPreviewSimulatedScreenWidth: 2048
+  mPreviewSimulatedScreenHeight: 1536
+  editorCurrentSection: 0
+  editorOpenThumbStickIndex: -1
+  editorOpenButtonIndex: -1
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

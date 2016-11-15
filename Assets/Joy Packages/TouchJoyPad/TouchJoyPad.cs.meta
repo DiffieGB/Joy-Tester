@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 8c0d2ea1f99244975a8ee908690e3b9b
+timeCreated: 1430622047
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - spriteJoyKey: {fileID: 21300000, guid: 5e6c93732c00242bbaee64cdae7535c6, type: 3}
+  - spriteButton01: {fileID: 21300000, guid: 5e229c5a946724f53a92ef5a6cf679f3, type: 3}
+  - spriteButton02: {fileID: 21300000, guid: 5e229c5a946724f53a92ef5a6cf679f3, type: 3}
+  - spriteButton03: {fileID: 21300000, guid: 5e229c5a946724f53a92ef5a6cf679f3, type: 3}
+  - spriteButton04: {fileID: 21300000, guid: 5e229c5a946724f53a92ef5a6cf679f3, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

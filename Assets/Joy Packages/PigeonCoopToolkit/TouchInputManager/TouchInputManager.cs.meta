@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 76f6c2c72133f0646b9dfe7da0d795a8
+labels:
+- TouchInputManager
+- Joystick
+- Button
+- TIM
+- Mobile
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

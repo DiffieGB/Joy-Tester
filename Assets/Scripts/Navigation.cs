@@ -10,7 +10,7 @@ public class Navigation : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        assetPackages = new List<AssetPackage> ( GetComponents<AssetPackage>() );
+        assetPackages = GetComponent<AssetManager>().assets;
 	}
 	
 	// Update is called once per frame
@@ -20,9 +20,15 @@ public class Navigation : MonoBehaviour {
 
     public void GoToUrl(string url)
     {
+#if UNITY_EDITOR
         Application.OpenURL(url);
+#elif  UNITY_WEBGL
+        Application.ExternalEval("window.open(\"" + url + "\")");
+#else
+        Application.OpenURL(url);
+#endif
     }
-    
+
     public void GoToHomeScene()
     {
         SceneManager.LoadScene(mainMenu);

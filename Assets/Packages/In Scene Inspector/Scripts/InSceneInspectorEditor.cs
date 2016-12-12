@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using UnityEditor;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 namespace TP_InSceneInspector
 {
@@ -94,6 +96,11 @@ namespace TP_InSceneInspector
                 if (GUI.Button(resetButtonRect, resetButtonText, GUI.skin.button))
                 {
                     InSceneInspectorInstance.Reset();
+                }
+
+                if (GUI.changed)
+                {
+                    EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
                 }
 
                 EditorGUILayout.HelpBox("For full editing capabilities un-check Use Custom Inspector", MessageType.Info);

@@ -1,16 +1,18 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using ZenFulcrum.EmbeddedBrowser;
 using UnityEngine.SceneManagement;
+
 
 public class AssetPopulator : MonoBehaviour {
 
-    public Browser browser;
+    private bool desktop;
+    public GameObject BrowserView;
+    public GameObject StaticView;
     public List<Button> buttonLinks;
     
-    private AssetPackage activeAssetPackage;
-    private Navigation navigation;
+    public AssetPackage activeAssetPackage;
+    public Navigation navigation;
     private AssetManager assetManager;
 
     // Use this for initialization
@@ -26,15 +28,13 @@ public class AssetPopulator : MonoBehaviour {
             if (assetPackage.sceneName == activeScene)
             {
                 activeAssetPackage = assetPackage;
-                Debug.Log("Active asset pack: " + activeAssetPackage);
+                //Debug.Log("Active asset pack: " + activeAssetPackage);
             }
-            Debug.Log("Asset pack: " + activeScene + ", Scene Name: " + assetPackage.sceneName);
+            //Debug.Log("Asset pack: " + activeScene + ", Scene Name: " + assetPackage.sceneName);
         }
 
         if (activeAssetPackage != null)
         {
-            browser.Url = activeAssetPackage.WebLink;
-
             foreach (Button button in buttonLinks)
             {
                 button.onClick.AddListener(delegate ()

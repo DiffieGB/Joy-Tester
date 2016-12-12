@@ -17,6 +17,14 @@ public class AssetManagerEditor : Editor
         if (GUILayout.Button("UpdateAssets"))
         {
             assetManager.assets = new List<AssetPackage>(assetManager.GetComponents<AssetPackage>());
+
+            foreach (AssetPackage asset in assetManager.assets)
+            {
+                if (!asset.enabled)
+                {
+                    assetManager.assets.Remove(asset);
+                }
+            }
         }
     }
 }

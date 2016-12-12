@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEditor;
-using ZenFulcrum.EmbeddedBrowser;
 
+#if false
+using ZenFulcrum.EmbeddedBrowser;   
 
 [CustomEditor(typeof(BrowserController))]
 [CanEditMultipleObjects]
@@ -23,3 +23,4 @@ public class BrowserControllerEditor : Editor
         }
     }
 }
+#endif

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-using System.Collections;
+
+#if false
 using ZenFulcrum.EmbeddedBrowser;
 
 public class BrowserController : MonoBehaviour {
@@ -34,3 +35,4 @@ public class BrowserController : MonoBehaviour {
         }
     }
 }
+#endif
